@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="movieDetail.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Montserrat&family=Roboto+Slab:wght@300;400;500;700&family=Roboto:wght@400;500&family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id = "outterMostDiv">
+            <div id = "upperHalf">
+                <div id = "moviePosterVertical">
+                    <img  id = "moviePoster">
+                </div>
+
+                <div id = "movieDetailsDiv">
+                    <div id = "movieTitle"></div>
+                    <div id = "movieOverview"></div>
+                    <div id = "movieDetails"> <!--Contain genre, duration, ...-->
+                        <div id = "div1">
+                            <div id = "genre">Genre: </div>
+
+                            <div id = "quality">Quality: 
+                                <button id = "hd">HD</button>
+                            </div>
+
+                            <div id = "producer">Producer: </div>
+                            <div id = "country">Country: </div>
+                        </div>
+
+                        <div id = "div2">
+                            <div id = "runtime">Duration: </div>
+                            <div id = "releaseDate">Release Date: </div>
+                            <div id = "scoreIMDB">IMDB: </div>
+                            <div id = "scoreVoteCount">Vote Count: </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id = "lowerHalf">
+                <div id = "home-movie-title">Home/Movies/</div>
+                <a href="https://www.youtube.com/watch?v=ue07acmWGNY&ab_channel=MemeGod" target ="_blank">
+                    <div id = "vidPlayer">
+                        <img  id = "moviePosterHorizontal">
+                        <button id = "playBtn">
+                            <!--The white play button image-->
+                            <img id = "playArrow" src = "movieImages/white-play-arrow-removebg-preview.png">
+                        </button>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <script src = "movieDetail.js"></script>
+    </body>
+</html>

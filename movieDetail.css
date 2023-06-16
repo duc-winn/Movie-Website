@@ -1,0 +1,110 @@
+/*Color to use
+#1C0C5B (dark purple)
+#3D2C8D (light ish purple)
+#916BBF (really Light purple)
+#C996CC (borderline pink)
+*/
+body{
+    background-color: #1C0C5B;
+    font-family: Rubik, Arial;
+}
+#outterMostDiv{
+    background-color: #3D2C8D;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    height: 1200px;
+}
+
+/*This is the upperHalf*/
+#upperHalf{
+    display: flex;
+}
+#movieDetailsDiv{
+    color: white;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 800px;
+    margin-left: 25px;
+}
+#movieDetails{
+    display: flex;
+    justify-content: space-evenly;
+}
+#div1{
+    font-size: 17px;
+    display: grid;
+    font-weight: 500;
+    width: 500px;
+}
+#div2{
+    margin-right: 20px;
+    font-weight: 500;
+    display: grid;
+}
+
+#moviePosterVertical{
+    margin-left: 50px;
+    margin-top: 40px;
+}
+#moviePoster{
+    width: 250px;
+}
+#movieTitle{
+    margin-left: 24px;
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+#movieOverview{
+    margin-left: 25px;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: -20px;
+}
+#hd{
+    background-color: yellow;
+    border: none;
+    border-radius: 3px;
+    font-weight: 700;
+    margin-left: 5px;
+    padding: 4px 4px;
+}
+
+/*This is the Lower Half*/
+#lowerHalf{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+#home-movie-title{
+    font-size: 25px;
+    color: white;
+}
+#moviePosterHorizontal{
+    position: absolute;
+    margin-top: 15px;
+    height: 550px;
+    width: 1100px;
+}
+#vidPlayer{
+    cursor: pointer;
+}
+#vidPlayer:hover > #moviePosterHorizontal{
+    filter: brightness(50%);
+}
+#playArrow{
+    width: 50px;
+}
+#playBtn{
+    cursor: pointer;
+    margin-left: 500px;
+    margin-top: 218px;
+    position: absolute;
+    z-index: 10;
+    background-color: #916BBF;
+    border: none;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}

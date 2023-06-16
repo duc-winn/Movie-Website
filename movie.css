@@ -1,0 +1,176 @@
+/*Color to use
+#1C0C5B (dark purple)
+#3D2C8D (light ish purple)
+#916BBF (really Light purple)
+#C996CC (borderline pink)
+*/
+body {
+    background-color: #1c0c5b;
+}
+/* This is the Top Third*/
+#headerDiv {
+    z-index: 1;
+    background-color: #1c0c5b;
+    position: fixed;
+    display: flex;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;  
+    flex-direction: row; 
+}
+#icon {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    background-color: #C996CC;
+    flex: 1fr;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+#iconImg{
+    width: 78px;
+}
+#header {
+    color: white;
+    font-family: Kablammo, Arial;
+    flex: 2fr;
+}
+#searchImg{
+    width: 20px;
+}
+#searchContainer{
+    flex: 1fr;
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+}
+#input{
+    background-color: #916BBF;
+    color: white;
+    padding: 10px 10px;
+    padding-left: 20px;
+    padding-right: 60px;
+    border-radius: 50px;
+    border: none;
+    margin-right: 5px;
+}
+::placeholder{
+    color: white;
+}
+#searchBtn{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+#searchBtn:active{
+    opacity: .7;
+}
+
+/*This is the second third of the webpage*/
+#categoryDiv{
+    background-color: #3D2C8D;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    top: 90px;
+    height: 140px;
+}
+#dropDownMenuBtn{
+    margin-top: 34px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: solid #C996CC;
+    cursor: pointer;
+    background-color: #3D2C8D;
+    color: white;
+}
+#menuOption{
+    background-color: black;
+    width: 200px;
+    height: 55px;
+    position: absolute;
+    margin-top: -8px;
+    margin-left: 39px;
+    cursor: pointer;
+}
+.hidden{
+    opacity: 0;
+}
+.show{
+    opacity: 1;
+}
+#option1,
+#option2,
+#option3{
+    text-align: center;
+    color: white;
+}
+#option1:hover ,
+#option2:hover,
+#option3:hover{
+    color: white;
+    background-color: #916BBF;
+}
+#category{
+    margin-top: 0px;
+    color: white;
+    margin-left: 40px;
+    font-size: 50px;
+}
+#searchResult{
+    color: white;
+    margin-top: 45px;
+    font-size: 50px;
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+/* This is the final third of the webpage */
+#moviesContainer{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: absolute;
+    margin-left: 50px;
+    row-gap: 30px;
+    left: 0px;
+    right: 0px;
+    top: 230px;
+}
+#movieDiv{
+    cursor: pointer;
+    width: 240px;
+    height: 440px;
+    background-color: #3D2C8D;
+    transition: padding .3s;
+}
+#info{
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+#score{
+    margin-top: 8px;
+}
+
+#movieDiv:hover{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+#movieId{
+    display: none;
+}
+

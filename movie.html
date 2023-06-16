@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Andrew's Movie</title>
+        <link rel="stylesheet" href="movie.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Montserrat&family=Roboto+Slab:wght@300;400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id = "outterMostDiv">
+            <div id = "headerDiv">
+                <div id = "icon">
+                    <img id = "iconImg" src = "movieImages/Andrew-Icon.png">
+                </div>
+                <h1 id = "header">Andrew's Film</h1>
+                <div id = "searchContainer">
+                    <input  id = "input" placeholder="Search movies...">
+                    <button id = "searchBtn">
+                        <img id = "searchImg" src ="movieIMages/search-icon.png">
+                    </button>
+                </div>
+            </div>
+                
+            <div id = "categoryDiv">
+                <button id = "dropDownMenuBtn">Most Popular</button>
+                <div id = "menuOption" class = "hidden">
+                    <div id ="option1">Most Popular</div> <!--Defult value selected-->
+                    <div id ="option2">Top Rated</div>
+                    <div id ="option3">Upcoming Movies</div>
+                </div>
+                <h2 id = "category">Most Popular</h2>
+            </div>
+
+            <div id = "moviesContainer">
+                <!--This is where ALL the movie divs is-->
+            </div>
+        </div>
+
+        <div>
+            <a  id = "link" href="movieDetail.html" target = "_self">Blank Page here</a>
+        </div>
+        <script src = "movie.js"></script>
+    </body>
+
+</html>
