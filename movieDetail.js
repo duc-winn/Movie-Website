@@ -1,5 +1,10 @@
-
 const moviePosterUrl = `https://www.themoviedb.org/t/p/original`;
+
+const xuePiaoUrl = `https://www.youtube.com/watch?v=ue07acmWGNY&ab_channel=MemeGod`;
+const rickRollUrl = `https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley`;
+const monkeyUrl = `https://www.youtube.com/watch?v=6Cr_8tvvQ0k&ab_channel=Asha7494`;
+const alienUrl = `https://www.youtube.com/watch?v=WxrQ3SqSt6Q&ab_channel=Deemz`;
+const bangerUrl = `https://www.youtube.com/watch?v=XJWqHmY-g9U&ab_channel=JunkoOhashi%E5%A4%A7%E6%A9%8B%E7%B4%94%E5%AD%90`;
 
 let movieId = localStorage.getItem("movieId");
 
@@ -15,6 +20,7 @@ let runtime = document.getElementById("runtime");
 let releaseDate = document.getElementById("releaseDate");
 let imdb = document.getElementById("scoreIMDB");
 let voteCount = document.getElementById("scoreVoteCount");
+let trollLink = document.getElementById("trollLink");
 
 
 async function getDetail(){
@@ -37,6 +43,8 @@ async function getDetail(){
         movieOverview.innerHTML = result.overview;
         movieTitle.innerText = `Home / Movies / ${result.title}`;
         moviePosterHorizontal.setAttribute("src", `${moviePosterUrl}${result.backdrop_path}`);
+
+        trollLink.setAttribute("href", getLink());
 
         genre.innerHTML = `Genre: ${result.genres.map((element) => {
             return element.name;
@@ -62,4 +70,25 @@ async function getDetail(){
 }
 
 getDetail();
+
+function getLink(){
+    let random = Math.floor((Math.random() * 5)) + 1;
+
+    switch(random){
+        case 1:
+            return xuePiaoUrl;
+
+        case 2:
+            return rickRollUrl;
+
+        case 3:
+            return monkeyUrl;
+
+        case 4:
+            return alienUrl;
+
+        case 5:
+            return bangerUrl;
+    }
+}
 
